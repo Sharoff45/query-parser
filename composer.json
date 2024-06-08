@@ -1,0 +1,25 @@
+{
+  "name": "koksharov/fp-db-test",
+  "description": "Test work",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Koksharov",
+      "email": "sharoff45@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "ext-mysqli": "*",
+    "ext-mbstring": "*"
+  },
+  "scripts": {
+    "test": "./check-connection.php && ./test.php"
+  },
+  "autoload": {
+    "psr-4": {
+      "FpDbTest\\": "src/"
+    }
+  }
+}
